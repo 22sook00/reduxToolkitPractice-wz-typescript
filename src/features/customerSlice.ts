@@ -1,5 +1,5 @@
 import { createSlice,PayloadAction } from '@reduxjs/toolkit';
-//value 의 타입을 지정해줘야 한다.
+
 interface CustomerState {
   value : Customer[];
 }
@@ -17,7 +17,6 @@ const initialState:CustomerState = {
 export const customerSlice = createSlice({
   name : 'customer',
   initialState,
-  //reducers : for update particular state
   reducers : {
     addCustomer : (state,action:PayloadAction<Customer>) => {
       state.value.push(action.payload)

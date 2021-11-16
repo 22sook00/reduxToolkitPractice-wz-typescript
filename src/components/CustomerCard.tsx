@@ -10,6 +10,9 @@ interface CustomerCardType{
 function CustomerCard({id,name,food}:CustomerCardType) {
 
   // console.log('customer:::',customer)
+  const addFoodHandler = () => {
+    
+  }
 
   return (
     <div className="customer-food-card-container">
@@ -22,7 +25,7 @@ function CustomerCard({id,name,food}:CustomerCardType) {
               })}</div>
               <div className="customer-food-input-container">
                 <input />
-                <button>Add</button>
+                <button onClick  = {addFoodHandler}>Add</button>
               </div>
             </div>
           </div>
