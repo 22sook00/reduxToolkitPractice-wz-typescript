@@ -17,3 +17,5 @@
 
 - npm i node-sass --save
 
+- npm i uuid @types/uuid
+
