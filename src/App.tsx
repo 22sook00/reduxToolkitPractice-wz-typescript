@@ -52,6 +52,7 @@ function App() {
               <CustomerCard 
               key = {idx}
               id = {customer.id}
+              cardIdx = {idx}
               name = {customer.name}
               food = {customer.food}
               />
